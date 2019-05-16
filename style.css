@@ -10,7 +10,10 @@ body{
     padding: 1em 2em;
     color: #fff;
     border: 0;
-    text-align: center;
+    text-align: space-around;
+    margin-bottom: 10px;
+    /* border: 2px solid black; */
+    /* align-content: space-around; */
 }
 
 .button:hover{
@@ -144,6 +147,8 @@ width: 180px;
 .bg-dark   {
     background: #333;
     color: #f4f4f4;
+    padding: 20px;
+    /* margin-top: 10px; */
 }
 
 footer {
