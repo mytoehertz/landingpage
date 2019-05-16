@@ -1,8 +1,33 @@
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+//get modal element
+let modal = document.getElementById('simpleModal');
+//get open modal button
+let modalBtn = document.getElementById('modalBtn');
+// get close btn
+let closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+//listen for open click
+modalBtn.addEventListener('click', openModal);
+//listen for close click
+closeBtn.addEventListener('click', closeModal);
+//Listen for outside click
+window.addEventListener('click', clickOutside);
+//function
+
+function openModal(){
+	// console.log("123");
+	modal.style.display = "block";
+}
+
+function closeModal(){
+	// console.log("123");
+	modal.style.display = "none";
+}
+function clickOutside(e){
+	if(e.target == modal){
+		modal.style.display = "none";
+	}
+	
+}
 
 (function($) {
 

@@ -5,6 +5,58 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.button {
+    background: coral;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    text-align: center;
+}
+
+.button:hover{
+    background: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: #333;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from{opacity: 0}
+    to {opacity: 1}
+}
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30pxl;
+
+}
+
+.closeBtn:hover, .closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .showcase::after {
     content: '';
     height: 100vh;
