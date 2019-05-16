@@ -16,7 +16,9 @@ body{
 .button:hover{
     background: #333;
 }
-
+li {
+    font-size: small;
+}
 .modal {
     display: none;
     position: fixed;
